@@ -29,9 +29,41 @@ public class Main {
             System.out.print(upAndDown[t] + ", ");
         }
 
+        System.out.println("   ");
+        System.out.println("Задача 3");//Выведите в консоль значения массивов в обратном порядке
+        for (int value = 2; value >= 0; value--) {
+            if (value == 0) {
+                System.out.println(arr[value]);
+                break;
+            }
+            System.out.print(arr[value] + ", ");
+        }
+        for (int v = 2; v >=0; v--) {
+            if (v == 0) {
+                System.out.println(zzzz[v]);
+                break;
+            }
+            System.out.print(zzzz[v] + ", ");
+        }
+        for (int t=5; t>=0; t--) {
+            if (t == 0) {
+                System.out.println(upAndDown[t]);
+                break;
+            }
+            System.out.print(upAndDown[t] + ", ");
+        }
 
-
-
-
+        System.out.println("   ");
+        System.out.println("Задача 4");//Преобразуйте нечетные значения целочисленного массива в четные и выведите в консоль
+        for (int d = 0; d < arr.length; d++) {
+            if (arr[d]%2 != 0) {
+                arr[d]++;
+                if (d == arr.length - 1) {
+                    System.out.print(arr[d]);
+                    break;
+                }
+            }
+            System.out.print(arr[d] + ", ");
+        }
     }
 }
